@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box Practice</title>
+
+    <style>
+
+        /* general styling */
+        img {
+            float: left;
+            padding: 5px;
+        }
+
+       div {
+           color: white;
+           padding-top: 5px;
+           font-size: 13px;
+       }
+
+       p {
+           margin-top: 20px;
+       }
+
+       /* styling for flexbox on left */
+        .container-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 68%;
+            justify-content: space-around;
+            float: left;
+        }
+
+        .quarter {
+            flex: 1 1 30%;
+            height: calc((100vh / 3) - 40px);
+        }
+
+        .half {
+            flex: 1 1 60%;
+            height: calc((100vh / 3) - 40px);
+        }
+
+        .third {
+            flex: 1 1 45%;
+            height: calc((100vh / 3) - 40px);
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .lightBlue {
+            background-color: lightblue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        #order1 {
+            order: -1;
+        }
+
+        /* styling for flexbox columns on right */
+        .container-col {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            float: left;
+            width: 32%;
+        }
+
+        .darkGreen {
+            background-color: darkgreen;
+            flex: 1 1 100%;
+            height: 
+        }
+
+        .green {
+            background-color: green;
+            flex: 1 1 100%;
+        }
+
+        .height {
+            height: calc((100vh / 6) - 2px);
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-row">
+    <div class="quarter lightBlue" id="order2 height">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="quarter red" id="order3 height">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="half blue" id="order4 height">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="item first quarter orange" id="order1">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>FIRST: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="quarter lightBlue" id="order5">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="third red" id="order6">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+    <div class="third blue" id="order7">
+        <img src="https://placeimg.com/100/100/animals?t=1526921080278">
+        <p>LAST: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+            luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl. Pellentesque sagittis erat
+            id justo lacinia, in vehicula augue cursus. Ut ac tempor lectus. Nunc semper dolor ut leo semper
+            consectetur. Morbi sagittis nisi justo, in tempor justo faucibus venenatis. Maecenas facilisis congue nunc,
+            id dignissim erat bibendum vitae. In fermentum, nibh eu lacinia laoreet, sapien felis ullamcorper nisl,
+            feugiat mattis enim sem eget enim. Sed sed neque et elit sodales porta.</p>
+    </div>
+</div>
+<div class="container-col">
+    <div class="darkGreen last height">LAST: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+    <div class="darkGreen height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+    <div class="green height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+    <div class="darkGreen height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+    <div class="green height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+    <div class="green height" id="first">FIRST: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis risus non eros blandit, faucibus
+        luctus magna porta. Praesent a mi ornare, fermentum ex vitae, ullamcorper nisl.</div>
+</div>
+<!--</div>-->
+</body>
+</html>
